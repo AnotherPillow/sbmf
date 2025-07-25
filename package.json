@@ -1,0 +1,31 @@
+{
+  "name": "sbmf",
+  "version": "1.0.0",
+  "description": "A mineflayer plugin to make making bots on skyblock.net easier",
+  "keywords": [
+    "skyblock",
+    "mineflayer",
+    "minecraft",
+    "bot",
+    "mineflayer-plugin"
+  ],
+  "homepage": "https://github.com/AnotherPillow/sbmf#readme",
+  "bugs": {
+    "url": "https://github.com/AnotherPillow/sbmf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnotherPillow/sbmf.git"
+  },
+  "license": "MIT",
+  "author": "AnotherPillow (https://pillow.rocks)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mineflayer": "^4.30.0",
+    "prismarine-chat": "^1.11.0"
+  }
+}
