@@ -16,7 +16,6 @@ export const colourToCodes = {
     yellow: '&e',
     white: '&f',
     reset: '&f'
-    // reset: '&r'
 }
 
 export const formatHex = (hex: string, sep: string = '&') => {

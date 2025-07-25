@@ -18,9 +18,5 @@ export const plugin = (_bot: Bot, options: BotOptions) => {
     bot.emit('skyblock:ready')
     bot._chatQueue = new ChatQueue(bot)
     
-    // bot._client.on('playerChat', (data) => console.log('playemchat', data))
-    // bot._client.on('systemChat', (data) => console.log('systemcat', data))
     bot.on('message', (jsonMsg) => onMessage(bot, jsonMsg))
-    
-    console.log('plugin called with arguments: ', typeof bot, options)
 }

@@ -8,8 +8,6 @@ export const onMessage = (
     bot: SkyblockBot<Bot>, 
     jsonMsg: ChatMessage,
 ) => {
-    
-    console.log('received message')
     const sbm = new SkyblockChatMessage(jsonMsg)
     bot.emit('skyblock:chat', sbm)
 }

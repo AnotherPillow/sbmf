@@ -22,5 +22,4 @@ export interface ISkyblockBot<B extends Botish>
     _chatQueue: ChatQueue<B>
 }
 
-// export type SkyblockBot<B extends TypedEmitter<SkyblockBotEvents & mineflayer.BotEvents>> = B & SkyblockBotExtensions
 export type SkyblockBot<B extends Botish> = ISkyblockBot<B> & B

@@ -14,7 +14,7 @@ export default class ChatQueue<T extends Botish> {
 
         this._timeout = setInterval(() => {
             this.onLooped()
-        }, interval)
+        }, this.interval)
 
         ;(bot as any).queueChat = (message: string) => this.messages.push(message)
     }

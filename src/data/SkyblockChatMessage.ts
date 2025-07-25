@@ -10,14 +10,8 @@ export default class SkyblockChatMessage {
     private flattened: ChatMessage[] = []
     
     public constructor(
-        // username: string,
-        // message: string,
-        // _translate: string | null, // probably undefined
         jsonMsg: ChatMessage,
-        // matches: string[] | null
     ) {
-        // this.rawNickname = username;
-        // this.rawMessageContent = message
         this.fullMessage = jsonMsg.toString();
         this.chatMessage = jsonMsg;
 
@@ -29,8 +23,6 @@ export default class SkyblockChatMessage {
             if (msg.extra) msg.extra.forEach(recurse)
         }
         recurse(this.chatMessage)
-
-        // console.log(this.toChattable())
         
     }
 
