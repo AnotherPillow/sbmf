@@ -24,13 +24,17 @@ export const formatHex = (hex: string, sep: string = '&') => {
 }
 
 export const stripColourCodesAmp = (content: string) => {
-    return content.replace(/&[a-f0-9klmnor]/g, '')
+    return content.replace(/&[a-f0-9klmnorx]/g, '')
+}
+
+export const stripColourCodesPara = (content: string) => {
+    return content.replace(/[§\u00A7][a-f0-9klmnorx]/g, '')
 }
 
 export const cleanChatMessage = (content: string) => {
     if (!content) return ''
     return content
-        .replace(/[§\u00A7]([a-f0-9])/g, "&$1")
+        .replace(/[§\u00A7]([a-f0-9x])/g, "&$1")
         .replace(/[§\u00A7]r/g, '&f')
         .replace(/[§\u00A7][klmno]/g, '')
 }

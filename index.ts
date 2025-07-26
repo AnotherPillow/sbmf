@@ -3,7 +3,7 @@ import type { SkyblockBot } from './src/types'
 import type TypedEmitter from 'typed-emitter';
 import { onMessage } from './src/events'
 import type { ChatMessage } from 'prismarine-chat';
-import ChatQueue from './src/features/chatQueue';
+import ChatQueue from './src/features/ChatQueue';
 
 export const inject = <T extends Bot>(bot: T): bot is SkyblockBot<T> => {
     bot.loadPlugin(plugin)

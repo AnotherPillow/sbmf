@@ -8,7 +8,7 @@ export default class ChatQueue<T extends Botish> {
     private interval: number
     private bot: T
     
-    constructor(bot: T, interval = 2000) {
+    constructor(bot: T, interval = 1000) {
         this.interval = interval
         this.bot = bot
 

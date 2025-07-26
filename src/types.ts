@@ -1,8 +1,7 @@
 import type { BotEvents } from 'mineflayer'
-import type { Bot } from 'mineflayer'
 import type TypedEmitter from 'typed-emitter';
 import SkyblockChatMessage from './data/SkyblockChatMessage';
-import ChatQueue from './features/chatQueue';
+import ChatQueue from './features/ChatQueue';
 
 // export interface SkyblockBotExtensions {
 //     a: number;
